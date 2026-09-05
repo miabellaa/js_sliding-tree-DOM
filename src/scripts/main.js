@@ -11,14 +11,14 @@ for (const el of li) {
 
 const tree = document.querySelector('.tree');
 
-const treeListener = tree.addEventListener('click', (e) => {
-  if (e.target.tagName !== 'SPAN'){
+tree.addEventListener('click', (e) => {
+  if (e.target.tagName !== 'SPAN') {
     return;
   }
 
   const needList = e.target.parentElement.querySelector('ul');
 
-  if(!needList) {
+  if (!needList) {
     return;
   }
 
